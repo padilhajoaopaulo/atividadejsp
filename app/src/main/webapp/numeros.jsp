@@ -4,11 +4,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8"/>
-    <title>Document</title>
+    <title>Números</title>
 </head>
-<body>
-    <c:forEach var="item" begin-"1" end="20" step="1">
-        
-    </c:forEach>
-</body>
+    <body>
+        <c:forEach var="item" begin="1" end="20" step="1">
+            <c:if test="${(item % 3) == 0}">
+                ${item} <br />
+            </c:if>   
+        </c:forEach>
+    </body>
 </html>
